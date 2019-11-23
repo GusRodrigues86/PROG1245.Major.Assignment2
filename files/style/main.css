@@ -8,7 +8,7 @@
     --secondary-dark-color: #9a0007;
     --secondary-font-color: #ffffff;
     --menu-width: 20%;
-    --menu-min-width: 180px;
+    --menu-min-width: 150px;
     --margin-smallscreen: 8px;
     --margin-largescreen: 12px;
     --box-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -38,10 +38,17 @@ header {
     box-shadow: var(--box-shadow-1), var(--box-shadow-2);
 }
 
+nav {
+    padding: var(--margin-largescreen);
+    color: var(--primary-font-color);
+    background: var(--primary-dark-color);
+    box-shadow: var(--box-shadow-1), var(--box-shadow-1);
+}
+
 body {
     width: 85%;
     /*964px @ 1024 wide screen*/
-    min-width: 964px;
+    min-width: 800px;
     background-color: white;
     margin: 0 auto;
     /* Centralize content*/
@@ -54,22 +61,23 @@ body {
     height: 350px;
     float: left;
     border-right: 2px solid var(--secondary-color);
+    padding: var(--margin-largescreen);
 }
 
 main {
-    width: 55%;
-    min-width: 600px;
+    width: 53%;
+    min-width: 400px;
     float: left;
     padding: var(--margin-largescreen);
 }
 
 #rightMenu {
     width: 18%;
-    min-width: var(--menu-min-width);
-    /* min-width: 180px; */
+    min-width: var(--menu-min-width); /* min-width: 180px; */
     height: 350px;
     float: right;
     border-left: 2px solid var(--secondary-color);
+    padding: var(--margin-largescreen);
 }
 
 footer {
@@ -77,4 +85,5 @@ footer {
     border-top: 2px solid var(--secondary-color);
     background: var(--secondary-dark-color);
     color: var(--secondary-font-color);
+    padding: var(--margin-largescreen);
 }
