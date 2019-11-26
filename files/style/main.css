@@ -10,12 +10,15 @@ Text should use Share Tech Mono for impact.
     /*Accessible using var(--etc);*/
     --primary-color: #A7A9AC;
     --primary-light-color: #D8DBDE;
-    --primary-dark-color: #787A7D;
+    --primary-dark-color: #22272B;
+    /*font should use accent color with primary dark.*/
     --primary-font-color: #000000;
-    --accent-font-color: #997d27;
+    --accent-font-color: #ccac55;
     --secondary-color: #005288;
     --secondary-dark-color: #002A5B;
     --secondary-font-color: #ffffff;
+    --reference-text-color: #c30d54;
+    --reference-background-color: #000033;
     --menu-width: 20%;
     --menu-min-width: 150px;
     --margin-smallscreen: 8px;
@@ -34,28 +37,32 @@ html {
     background-color: var(--primary-light-color);
 }
 
-h2 {
-    padding: 1em;
-}
-
 header {
-    padding: var(--margin-large);
-    min-height: 80px;
-    color: var(--primary-font-color);
+    background-image: url("../images/arabsat-6a.jpg");
+    background-position: center -175px;
+    background-repeat: no-repeat;
     background-color: var(--primary-color);
     border-bottom: 2px solid var(--main-border-color);
+    min-height: 180px;
+    padding: var(--margin-largescreen);
     box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+    color: var(--secondary-font-color);
+    font-family: 'Share tech mono', monospace;
+    
 }
 
 nav {
+    font-family: 'Share tech mono', monospace;
     padding: var(--margin-largescreen);
-    color: var(--primary-font-color);
+    color: var(--accent-font-color);
     background: var(--primary-dark-color);
     box-shadow: var(--box-shadow-1), var(--box-shadow-1);
 }
 
 body {
+    font-family: 'Open sans', 'Verdana', sans-serif;
     width: 85%;
+    max-width: 964px;
     /*964px @ 1024 wide screen*/
     min-width: 800px;
     background-color: white;
@@ -69,8 +76,9 @@ body {
     min-width: var(--menu-min-width);
     height: 350px;
     float: left;
-    border-right: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-dark-color);
     padding: var(--margin-largescreen);
+    font-size: 0.85em;
 }
 
 main {
@@ -80,20 +88,38 @@ main {
     padding: var(--margin-largescreen);
 }
 
+article {
+    font-family: 'Roboto', sans-serif;
+}
+
 #rightMenu {
     width: 18%;
     min-width: var(--menu-min-width);
     height: 350px;
     float: right;
-    border-left: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--secondary-dark-color);
     padding: var(--margin-largescreen);
+    font-size: 0.85em;
 }
 
 footer {
     clear: both;
     text-align: center;
-    border-top: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--accent-font-color);
     background: var(--secondary-dark-color);
     color: var(--secondary-font-color);
     padding: var(--margin-largescreen);
+    font-size: 90%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited {
+    color: var(--accent-font-color);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: var(--accent-font-color);
+    font-weight: bold;
+    font-style: italic;
 }
