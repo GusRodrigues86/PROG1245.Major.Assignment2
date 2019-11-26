@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Share+Tech+Mono&display=swap');
+/* Google Fonts import*/
+
+/*
+Still deciding about fonts: Open Sans or Roboto
+Text should use Share Tech Mono for impact.
+*/
+
 :root {
     /*Accessible using var(--etc);*/
-    --primary-color: #37474f;
-    --primary-light-color: #62727b;
-    --primary-dark-color: #102027;
-    --primary-font-color: #ffffff;
-    --secondary-color: #d32f2f;
-    --secondary-dark-color: #9a0007;
+    --primary-color: #A7A9AC;
+    --primary-light-color: #D8DBDE;
+    --primary-dark-color: #787A7D;
+    --primary-font-color: #000000;
+    --accent-font-color: #997d27;
+    --secondary-color: #005288;
+    --secondary-dark-color: #002A5B;
     --secondary-font-color: #ffffff;
     --menu-width: 20%;
     --menu-min-width: 150px;
@@ -73,7 +82,7 @@ main {
 
 #rightMenu {
     width: 18%;
-    min-width: var(--menu-min-width); /* min-width: 180px; */
+    min-width: var(--menu-min-width);
     height: 350px;
     float: right;
     border-left: 2px solid var(--secondary-color);
@@ -82,6 +91,7 @@ main {
 
 footer {
     clear: both;
+    text-align: center;
     border-top: 2px solid var(--secondary-color);
     background: var(--secondary-dark-color);
     color: var(--secondary-font-color);
