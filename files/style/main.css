@@ -37,38 +37,29 @@ html {
     background-color: var(--primary-light-color);
 }
 
+body {
+    font-family: 'Open sans', 'Verdana', sans-serif;
+    width: 71%;
+    min-width: 964px;
+    /*964px @ 1024 wide screen*/
+    background-color: white;
+    margin: 0 auto 0.25em;
+    /* Centralize content*/
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}
+
 header {
     background-image: url("../images/arabsat-6a.jpg");
     background-position: center -175px;
     background-repeat: no-repeat;
-    background-color: var(--primary-color);
-    border-bottom: 2px solid var(--main-border-color);
+    background-attachment: fixed;
     min-height: 180px;
-    padding: var(--margin-largescreen);
+    padding: 1em var(--margin-largescreen);
     box-shadow: var(--box-shadow-1), var(--box-shadow-2);
     color: var(--secondary-font-color);
     font-family: 'Share tech mono', monospace;
-    
-}
-
-nav {
-    font-family: 'Share tech mono', monospace;
-    padding: var(--margin-largescreen);
-    color: var(--accent-font-color);
-    background: var(--primary-dark-color);
-    box-shadow: var(--box-shadow-1), var(--box-shadow-1);
-}
-
-body {
-    font-family: 'Open sans', 'Verdana', sans-serif;
-    width: 85%;
-    max-width: 964px;
-    /*964px @ 1024 wide screen*/
-    min-width: 800px;
-    background-color: white;
-    margin: 0 auto;
-    /* Centralize content*/
-    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+    text-align: right;
+    letter-spacing: 1em;
 }
 
 #leftMenu {
@@ -106,7 +97,7 @@ footer {
     clear: both;
     text-align: center;
     border-top: 2px solid var(--accent-font-color);
-    background: var(--secondary-dark-color);
+    background: var(--primary-dark-color);
     color: var(--secondary-font-color);
     padding: var(--margin-largescreen);
     font-size: 90%;
@@ -121,5 +112,81 @@ a:link, a:visited {
 a:hover, a:focus {
     color: var(--accent-font-color);
     font-weight: bold;
-    font-style: italic;
+}
+
+nav {
+    font-family: 'Share tech mono', monospace;
+    color: var(--accent-font-color);
+    background: var(--primary-dark-color);
+    padding: var(--margin-smallscreen);
+    box-shadow: var(--box-shadow-1), var(--box-shadow-1);
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 33%;
+    margin: 0 auto;
+}
+
+#nav_menu ul li a {
+    display: block;
+    min-width: 33%;
+    padding: 0.5em 0;
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent-font-color);
+    background-color: var(--primary-dark-color);
+}
+
+#nav_menu ul li a.current {
+    color: var(--primary-font-color);
+    background: var(--accent-font-color);
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    color: var(--primary-dark-color);
+    background-color: var(--accent-font-color);
+}
+
+/* Second Level Menu*/
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    width: 312px;
+}
+
+#nav_menu ul ul li {
+    float: none;
+    position: relative;
+    min-width: 258px;
+    background-color: var(--primary-dark-color);
+    text-decoration: none;
+    text-align: center;
+    color: var(--accent-font-color);
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+}
+
+#nav_menu>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 89%; /*Required due alignment*/
+    top: 0;
 }
