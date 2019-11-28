@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+html {
+    background: var(--primary-dark-color);
+}
+
+body {
+    background: var(--reference-background-color);
+}
+
+header {
+    background-image: url("../images/starship.jpg");
+    background-position: center;
+}
+
+nav {
+    color: var(--reference-text-color);
+}
+
+article {
+    min-width: 96%;
+    font-family: 'Share tech mono', monospace;
+    color: var(--reference-text-color);
+}
+
+article h1 {
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+
+article p {
+    margin: 0 auto 1em;
+}
+
+article ul {
+    list-style-type: none;
+    font-size: 115%;
+}
+
+article li {
+    padding-left: 1em;
+    margin-bottom: 0.25em;
+}
+
+article ul li:before {
+    content: "»";
+    color: var(--accent-font-color);
+}
+
+footer {
+    color: var(--reference-text-color);
+    border-top: 2px solid var(--accent-font-color);
+}
+
+a:link, a:visited {
+    color: var(--reference-text-color);
+    font-style: italic;
+}
+
+a:hover, a:focus {
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+    color: var(--reference-background-color);
+    background: var(--reference-text-color);
+    font-weight: bold;
+}
+
+#nav_menu ul li a {
+    color: var(--reference-text-color);
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    color: var(--reference-background-color);
+    background-color: var(--reference-text-color);
+}
