@@ -1,0 +1,15 @@
+header {
+    background-image: url("../images/crew-demo1.jpg");
+    background-position: center -225px;
+}
+
+article img {
+    border: 1px solid var(--secondary-dark-color);
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}
+
+article h2 {
+    border-bottom: 1px solid var(--accent-font-color);
+    margin-bottom: 0.5em;
+    color: var(--accent-font-color);
+}
