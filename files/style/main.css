@@ -63,15 +63,6 @@ header {
     letter-spacing: 1em;
 }
 
-#leftMenu {
-    width: 25%;
-    min-width: var(--menu-min-width);
-    float: left;
-    border-right: 2px solid var(--secondary-dark-color);
-    padding: var(--margin-largescreen);
-    font-size: 0.85em;
-}
-
 main {
     width: 100%;
     display: flex;
@@ -81,27 +72,6 @@ article {
     margin: var(--margin-largescreen);
     min-width: 50%;
     font-family: 'Roboto', sans-serif;
-}
-
-article h2 {
-    border-bottom: 1px solid var(--accent-font-color);
-    margin-bottom: 0.5em;
-}
-
-article p {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-}
-
-#rightMenu {
-    /*765px to the right and 230px from the top*/
-    width: 25%;
-    min-width: var(--menu-min-width);
-    /*350px;*/
-    float: right;
-    border-left: 2px solid var(--secondary-dark-color);
-    padding: var(--margin-largescreen);
-    font-size: 0.85em;
 }
 
 footer {
@@ -203,6 +173,15 @@ nav {
     top: 0;
 }
 
+#leftMenu {
+    width: 25%;
+    min-width: var(--menu-min-width);
+    float: left;
+    border-right: 2px solid var(--secondary-dark-color);
+    padding: var(--margin-largescreen);
+    font-size: 0.85em;
+}
+
 #leftMenu ol {
     padding: 0 var(--margin-smallscreen) 0.25em;
 }
@@ -210,6 +189,17 @@ nav {
 #leftMenu ol li {
     font-size: 95%;
     padding: 0 var(--margin-smallscreen) 0.25em;
+}
+
+#rightMenu {
+    /*765px to the right and 230px from the top*/
+    width: 25%;
+    min-width: var(--menu-min-width);
+    /*350px;*/
+    float: right;
+    border-left: 2px solid var(--secondary-dark-color);
+    padding: var(--margin-largescreen);
+    font-size: 0.85em;
 }
 
 #rightMenu ul {
