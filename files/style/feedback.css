@@ -1,11 +1,10 @@
 header {
     background-image: url("../images/FalconHeavyDemoMission.jpg");
-    background-position: center ;
+    background-position: center;
 }
 
 article {
-    max-width: 95%;
-    min-width: 61%;
+    width: 61%;
     margin: 0 auto;
     text-align: left;
     padding: 1em var(--margin-smallscreen);
@@ -23,6 +22,14 @@ article section h2 {
     color: var(--secondary-dark-color);
     border-bottom: 0.01em solid var(--primary-color);
 }
+
+#rightMenu section h2 {
+    margin: var(--margin-largescreen) 0;
+    font-size: 95%;
+    color: var(--secondary-dark-color);
+    border-bottom: 0.01em solid var(--primary-color);
+}
+
 
 form fieldset {
     border: 1px solid var(--accent-font-color);
@@ -52,6 +59,22 @@ form fieldset label {
     min-width: 6.5em;
 }
 
+#rightMenu form fieldset label {
+    margin-bottom: 0.5em;
+    font-family: 'Share tech mono', monospace;
+    color: var(--secondary-color);
+    clear: both;
+    width: 10em;
+}
+
+#rightMenu form fieldset input {
+    font-family: 'Share tech mono', monospace;
+    color: var(--secondary-color);
+    float: right;
+    text-align: left;
+    width: 1em;
+}
+
 form fieldset section label .general {
     clear: both;
     width: 10em;
@@ -65,28 +88,40 @@ form fieldset section p {
     margin: var(--margin-largescreen) 0;
 }
 
+#rightMenu form fieldset section p {
+    margin: var(--margin-smallscreen) 0;
+}
+
 #button {
     margin-left: 7em;
 }
 
 input[type=text], input[type=email] {
+    background: transparent;
     width: 18em;
-    background: white;
     padding: 0.25em 0.5em;
     border: 0;
-    border-radius: 0.5em;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
-input[type=email]:invalid {
+input[type=text]:valid, input[type=email]:valid {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+input[type=text]:invalid, input[type=email]:invalid {
     border-bottom: 2px solid var(--reference-text-color);
 }
 
 input:focus, textarea:focus, select:focus {
-    outline: none !important;
+    outline-color: transparent;
+    outline-width: 1px;
+    outline-style: dotted;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 2px 0 var(--accent-font-color), -1px -1px 2px 0 var(--accent-font-color);
+    background: white;
 }
 
-input[type=submit] {
+button[type=submit] {
     border: 0;
     font-family: 'Share tech mono', monospace;
     background: var(--accent-font-color);
@@ -104,12 +139,7 @@ input[type=reset] {
     width: 5em;
 }
 
-input:invalid {
-    box-shadow: none;
-}
-
 select {
-    background: white;
     padding: 0.25em 0.5em;
     border: 0;
     border-radius: 0.5em;
@@ -146,4 +176,8 @@ textarea {
 
 .ui-shadow {
     box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}
+
+.longer {
+    clear: both;
 }

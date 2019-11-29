@@ -81,14 +81,14 @@
                         <section>
                             <h2>Personal Information</h2>
                             <p>
-                                <label for="form_name">Your Name:</label>
+                                <label for="form_name" accesskey="n">Your <u>N</u>ame:</label>
                                 <input type="text" name="form_name" id="form_name" placeholder="Your name"
-                                    required pattern="\S+">
+                                    required pattern="\S+" autofocus>
                             </p>
                             <p>
-                                <label for="form_email">Your email:</label>
+                                <label for="form_email" accesskey="e">Your <u>e</u>mail:</label>
                                 <input type="email" name="form_email" id="form_email" placeholder="Your email"
-                                    required autofocus>
+                                    required>
                             </p>
                         </section>
                         <section class="general">
@@ -132,7 +132,8 @@
                         </section>
                         <section>
                             <p>
-                                <input type="submit" value="Submit" onclick="submitAlert()" class="ui-shadow">
+                                <button type="submit" value="Submit" onclick="submitAlert()">Submit</button>
+                                
                                 <input type="reset" value="Clear" class="ui-shadow">
                             </p>
                         </section>
@@ -140,14 +141,45 @@
                 </form>
             </article>
             <aside id="rightMenu">
-                <ul>
-                    <li>Reusable Rockets</li>
-                    <li>Star Wars Inspired Name</li>
-                    <li>Inspiring Generations</li>
-                    <li>Made Space Fun Again</li>
-                    <li><a href="https://www.youtube.com/watch?v=A0FZIwabctw" target="_blank">Launched Starman</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=bvim4rsNHkQ" target="_blank">Lovely failures</a></li>
-                </ul>
+                <form id="form_page" method="POST" onclick="submitAlert()">
+                    <fieldset class="ui-border">
+
+                        <legend class="ui-border ui-shadow">About the Webpage</legend>
+                        <section>
+                            <h2>The Page was:</h2>
+                            <p>
+                                <label for="fun">Fun</label>
+                                <input type="checkbox" name="fun">
+                            </p>
+                            <p>
+                                <label for="design">Well Designed</label>
+                                <input type="checkbox" name="design">
+                            </p>
+                            <p>
+                                <label for="colors">Nice Colors</label>
+                                <input type="checkbox" name="colors">
+                            </p>
+                            <p>
+                                <label for="information">Accurate info</label>
+                                <input type="checkbox" name="information">
+                            </p>
+                            <p>
+                                <label for="data">Relevant data</label>
+                                <input type="checkbox" name="data">
+                            </p>
+                        <br>
+                            <h2 class="longer">Will I visit this page again:</h2>
+                                <p>
+                                    <label for="will_return">Yes</label>
+                                    <input type="radio" name="will_return" value="yes">
+                                </p>
+                                <p>
+                                    <label for="will_return">No</label>
+                                    <input type="radio" name="will_return" value="no">
+                                </p>
+                        </section>
+                    </fieldset>
+                </form>
             </aside>
         </main>
         <script src="../scripts/alert.js"></script>
