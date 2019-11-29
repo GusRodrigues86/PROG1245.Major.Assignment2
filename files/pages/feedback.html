@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback - SpaceX fan site</title>
+        <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../style/main.css">
+        <link rel="stylesheet" type="text/css" href="../style/feedback.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>SpaceX fan site</h1>
+        </header>
+        <nav id="nav_menu">
+            <ul>
+                <!--Three tier Navigation-->
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">SpaceX</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/construction.html">Future Missions</a>
+                        </li>
+                        <li>
+                            <a href="#">Current Missions</a>
+                            <ul>
+                                <li>
+                                    <a href="../pages/falconh.html">Falcon Heavy</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/falcon9.html">Falcon 9</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Extras</a>
+                    <ul>
+                        <li>
+                            <a href="../pages/feedback.html" class="current">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="../pages/reference.html">References</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <aside id="leftMenu">
+                <p>The Navigation Area composed of Thumbnail images will consist of the following;</p>
+                <ol>
+                    <li>The top thumbnail image will link to the home page.</li>
+                    <li>
+                        Subsequent thumbnail images will provide links for pages that are below the home page, i.e.
+                        these
+                        would be the top tier of your navigation bar.
+                    </li>
+                    <li>Each of these thumbnail images will contain a text caption describing the thumbnail.</li>
+                    <li>This thumbnail image navigation area will be the same throughout the site.</li>
+                    <li>
+                        The Thumbnail Navigation Area should be distinguishable from the other areas of your site by
+                        colour
+                        or
+                        border or both.
+                    </li>
+                </ol>
+
+            </aside>
+
+            <article>
+                <form id="feedback_form" method="POST">
+                    <fieldset class="ui-border">
+                        <legend class="ui-border ui-shadow">Spacex Fan site feedback Form</legend>
+
+                        <section>
+                            <h2>Personal Information</h2>
+                            <p>
+                                <label for="form_name">Your Name:</label>
+                                <input type="text" name="form_name" id="form_name" placeholder="Your name"
+                                    required pattern="\S+">
+                            </p>
+                            <p>
+                                <label for="form_email">Your email:</label>
+                                <input type="email" name="form_email" id="form_email" placeholder="Your email"
+                                    required autofocus>
+                            </p>
+                        </section>
+                        <section class="general">
+                            <h2>General Feedback</h2>
+                            <p><label for="form_perception">How do you describe space travel?</label></p>
+                            <p>
+                                <select name="form_perception" id="form_perception">
+                                    <optgroup label="Positive">
+                                        <option value="yes_astro">Awesome! I want to be an astronaut!</option>
+                                        <option value="yes_explorer">Gret! I love space exploration!</option>
+                                        <option value="yes_rockets">Yeah! Let's visit the stars!</option>
+                                    </optgroup>
+                                    <optgroup label="Negative">
+                                        <option value="no_sad">No. Silly and childish.</option>
+                                        <option value="no_mad">No. This is just a mad man dream.</option>
+                                        <option value="no_villain">No! Elon Musk is an actual supervillain!</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="exploration">
+                                    Which words would you use to describe space exploration:
+                                </label>
+                            </p>
+                            <p>
+                                <select class="exploration" name="exploration" size="4" multiple required>
+                                    <option name="neat" value="neat">Neat!</option>
+                                    <option name="fun" value="fun">Fun!</option>
+                                    <option name="silly" value="silly">Silly!</option>
+                                    <option name="danger" value="danger">Dangerous!</option>
+                                </select>
+                            </p>
+                        </section>
+                        <section>
+                            <p><label for="comments">Comments <span class="optional">(Optional)</span></label></p>
+                            <p>
+                                <textarea name="comments"
+                                    placeholder="For comments, suggestions and others, please enter them here."></textarea>
+                            </p>
+                        </section>
+                        <section>
+                            <p>
+                                <input type="submit" value="Submit" onclick="submitAlert()" class="ui-shadow">
+                                <input type="reset" value="Clear" class="ui-shadow">
+                            </p>
+                        </section>
+                    </fieldset>
+                </form>
+            </article>
+            <aside id="rightMenu">
+                <ul>
+                    <li>Reusable Rockets</li>
+                    <li>Star Wars Inspired Name</li>
+                    <li>Inspiring Generations</li>
+                    <li>Made Space Fun Again</li>
+                    <li><a href="https://www.youtube.com/watch?v=A0FZIwabctw" target="_blank">Launched Starman</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=bvim4rsNHkQ" target="_blank">Lovely failures</a></li>
+                </ul>
+            </aside>
+        </main>
+        <script src="../scripts/alert.js"></script>
+    </body>
+
+</html>

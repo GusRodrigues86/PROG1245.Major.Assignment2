@@ -1,0 +1,149 @@
+header {
+    background-image: url("../images/FalconHeavyDemoMission.jpg");
+    background-position: center ;
+}
+
+article {
+    max-width: 95%;
+    min-width: 61%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em var(--margin-smallscreen);
+}
+
+article h2 {
+    border-bottom: 1px solid var(--accent-font-color);
+    margin-bottom: 0.5em;
+    color: var(--accent-font-color);
+}
+
+article section h2 {
+    margin: var(--margin-largescreen) 0;
+    font-size: 95%;
+    color: var(--secondary-dark-color);
+    border-bottom: 0.01em solid var(--primary-color);
+}
+
+form fieldset {
+    border: 1px solid var(--accent-font-color);
+    background: var(--primary-light-color);
+}
+
+form fieldset legend {
+    background: white;
+    color: var(--secondary-color);
+    font-family: 'Share tech mono', monospace;
+    font-weight: bold;
+    padding: 0 0.25em 0 0;
+}
+
+form fieldset legend::first-letter {
+    font-family: 'Share tech mono', monospace;
+    color: var(--primary-font-color);
+    font-style: italic;
+    font-size: 150%;
+    margin: 0 0.1em 0 0;
+}
+
+form fieldset label {
+    font-family: 'Share tech mono', monospace;
+    color: var(--secondary-color);
+    float: left;
+    min-width: 6.5em;
+}
+
+form fieldset section label .general {
+    clear: both;
+    width: 10em;
+}
+
+form fieldset section {
+    margin: var(--margin-largescreen) var(--margin-smallscreen);
+}
+
+form fieldset section p {
+    margin: var(--margin-largescreen) 0;
+}
+
+#button {
+    margin-left: 7em;
+}
+
+input[type=text], input[type=email] {
+    width: 18em;
+    background: white;
+    padding: 0.25em 0.5em;
+    border: 0;
+    border-radius: 0.5em;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+input[type=email]:invalid {
+    border-bottom: 2px solid var(--reference-text-color);
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+}
+
+input[type=submit] {
+    border: 0;
+    font-family: 'Share tech mono', monospace;
+    background: var(--accent-font-color);
+    color: var(--primary-font-color);
+    padding: 0.25em 0;
+    width: 5em;
+}
+
+input[type=reset] {
+    border: 0;
+    font-family: 'Share tech mono', monospace;
+    background: var(--secondary-dark-color);
+    color: var(--secondary-font-color);
+    padding: 0.25em 0;
+    width: 5em;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+select {
+    background: white;
+    padding: 0.25em 0.5em;
+    border: 0;
+    border-radius: 0.5em;
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}
+
+select {
+    width: 26em;
+}
+
+textarea {
+    height: 8.5em;
+    /*Rows*/
+    width: 26em;
+    /*cols*/
+    resize: none;
+    padding: 0.25em;
+    border-radius: 0.5em;
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}
+
+.optional {
+    color: var(--primary-font-color);
+    font-weight: bold;
+    font-size: 0.75em;
+    margin: 0 0 0 2em;
+}
+
+.ui-border {
+    border-radius: 0.3em;
+}
+
+.ui-shadow {
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+}

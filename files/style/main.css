@@ -9,7 +9,7 @@ Text should use Share Tech Mono for impact.
 :root {
     /*Accessible using var(--etc);*/
     --primary-color: #A7A9AC;
-    --primary-light-color: #D8DBDE;
+    --primary-light-color: #EEEEEE;
     --primary-dark-color: #22272B;
     /*font should use accent color with primary dark.*/
     --primary-font-color: #000000;
@@ -21,8 +21,8 @@ Text should use Share Tech Mono for impact.
     --reference-background-color: #000033;
     --menu-width: 20%;
     --menu-min-width: 150px;
-    --margin-smallscreen: 8px;
-    --margin-largescreen: 12px;
+    --margin-smallscreen: 0.5em;
+    --margin-largescreen: 0.75em;
     --box-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12);
     --box-shadow-2: 0 1px 2px rgba(0, 0, 0, 0.24);
 }

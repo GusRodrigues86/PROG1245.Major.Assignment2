@@ -1,8 +1,14 @@
 ****Image reference
-
 https://www.flickr.com/photos/spacex/48953946911/ -> Starship | First test vehicle
 https://www.flickr.com/photos/spacex/40628437283/ -> Arabsat-6A Mission (Falcon Heavy)
 https://www.flickr.com/photos/spacex/17127808431/ -> Just Reat the Instructions Barge
 https://www.flickr.com/photos/spacex/41281636860/ -> CRS-15 Mission
 https://www.flickr.com/photos/spacex/32774791628/ -> Crew Demo-1 Mission
 https://www.flickr.com/photos/spacex/40126460511/ -> Falcon Heavy Demo Mission
+
+****Videos
+https://www.youtube.com/watch?v=A0FZIwabctw ->Falcon Heavy & Starman
+https://www.youtube.com/watch?v=bvim4rsNHkQ ->How Not to Land an Orbital Rocket Booster
+
+****Script
+https://vyspiansky.github.io/2019/07/13/javascript-at-least-one-checkbox-must-be-selected/ -> Checkbox validation
