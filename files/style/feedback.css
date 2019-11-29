@@ -30,7 +30,6 @@ article section h2 {
     border-bottom: 0.01em solid var(--primary-color);
 }
 
-
 form fieldset {
     border: 1px solid var(--accent-font-color);
     background: var(--primary-light-color);
@@ -67,14 +66,6 @@ form fieldset label {
     width: 10em;
 }
 
-#rightMenu form fieldset input {
-    font-family: 'Share tech mono', monospace;
-    color: var(--secondary-color);
-    float: right;
-    text-align: left;
-    width: 1em;
-}
-
 form fieldset section label .general {
     clear: both;
     width: 10em;
@@ -89,6 +80,7 @@ form fieldset section p {
 }
 
 #rightMenu form fieldset section p {
+    clear: both;
     margin: var(--margin-smallscreen) 0;
 }
 
@@ -121,21 +113,22 @@ input:focus, textarea:focus, select:focus {
     background: white;
 }
 
-button[type=submit] {
+input[type=submit] {
     border: 0;
     font-family: 'Share tech mono', monospace;
     background: var(--accent-font-color);
     color: var(--primary-font-color);
-    padding: 0.25em 0;
+    padding: 0.3em 0;
     width: 5em;
 }
+
 
 input[type=reset] {
     border: 0;
     font-family: 'Share tech mono', monospace;
     background: var(--secondary-dark-color);
     color: var(--secondary-font-color);
-    padding: 0.25em 0;
+    padding: 0.3em 0;
     width: 5em;
 }
 
