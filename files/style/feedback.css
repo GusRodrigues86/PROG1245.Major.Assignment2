@@ -151,9 +151,7 @@ textarea {
     /*cols*/
     resize: none;
     padding: 0.25em;
-    border-radius: 0.5em;
     border-bottom: 1px solid var(--secondary-color);
-    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
 }
 
 .optional {

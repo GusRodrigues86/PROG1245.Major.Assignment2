@@ -125,7 +125,7 @@
                         <section>
                             <p><label for="comments">Comments <span class="optional">(Optional)</span></label></p>
                             <p>
-                                <textarea name="comments"
+                                <textarea class="ui-shadow ui-border" name="comments"
                                     placeholder="For comments, suggestions and others, please enter them here."></textarea>
                             </p>
                         </section>
@@ -140,7 +140,7 @@
                 </form>
             </article>
             <aside id="rightMenu">
-                <form id="form_page" method="POST" onclick="submitAlert()">
+                <form id="form_page" method="POST">
                     <fieldset class="ui-border">
 
                         <legend class="ui-border ui-shadow">About the Webpage</legend>
@@ -170,11 +170,11 @@
                             <h2 class="longer">Will I visit this page again:</h2>
                             <p>
                                 <label for="will_return">Yes</label>
-                                <input type="radio" name="will_return" value="yes">
+                                <input type="radio" name="will_return" value="yes" required>
                             </p>
                             <p>
                                 <label for="will_return">No</label>
-                                <input type="radio" name="will_return" value="no">
+                                <input type="radio" name="will_return" value="no" required>
                             </p>
                             <br>
                             <section>
@@ -190,6 +190,7 @@
             </aside>
         </main>
         <script src="../scripts/alert.js"></script>
+        <script src="../scripts/checkbox_validation.js"></script>
     </body>
 
 </html>
