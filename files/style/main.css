@@ -72,6 +72,8 @@ article {
     margin: var(--margin-largescreen);
     width: 61%;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+    line-height: 1.5;
 }
 
 footer {
@@ -216,4 +218,12 @@ nav {
     padding-left: 0.25em;
     content: "> ";
     color: var(--accent-font-color);
+}
+
+.ui-border {
+    border-radius: 0.3em;
+}
+
+.ui-shadow {
+    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
 }

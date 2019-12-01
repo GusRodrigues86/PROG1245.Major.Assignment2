@@ -40,6 +40,7 @@ form fieldset legend {
     color: var(--secondary-color);
     font-family: 'Share tech mono', monospace;
     font-weight: bold;
+    font-kerning: auto;
     padding: 0 0.25em 0 0;
 }
 
@@ -48,7 +49,7 @@ form fieldset legend::first-letter {
     color: var(--primary-font-color);
     font-style: italic;
     font-size: 150%;
-    margin: 0 0.1em 0 0;
+    letter-spacing: 0.05em;
 }
 
 form fieldset label {
@@ -122,7 +123,6 @@ input[type=submit] {
     width: 5em;
 }
 
-
 input[type=reset] {
     border: 0;
     font-family: 'Share tech mono', monospace;
@@ -159,14 +159,6 @@ textarea {
     font-weight: bold;
     font-size: 0.75em;
     margin: 0 0 0 2em;
-}
-
-.ui-border {
-    border-radius: 0.3em;
-}
-
-.ui-shadow {
-    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
 }
 
 .longer {
