@@ -3,13 +3,84 @@ header {
     background-position: center -225px;
 }
 
-article img {
-    border: 1px solid var(--secondary-dark-color);
-    box-shadow: var(--box-shadow-1), var(--box-shadow-2);
+figure {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    margin-bottom: 1em;
 }
 
-article h2 {
-    border-bottom: 1px solid var(--accent-font-color);
-    margin-bottom: 0.5em;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+th {
+    border: 0;
+    margin: 0.1em 0.25em;
+    color: var(--primary-color);
+    font-weight: normal;
+    background: var(--primary-dark-color);
+}
+
+td {
+    padding: 0.25em;
+    font-family: 'Share tech mono', monospace;
+}
+
+tr:first-child {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+th:first-child {
+    text-align: center;
+}
+
+td {
+    width: 55%;
+    text-align: right;
+}
+
+tr:nth-last-of-type(-n+2) th {
+    text-align: right;
+}
+
+tr:nth-last-of-type(-n+2) td:nth-last-child(-n+2) {
+    text-align: left;
+    padding-left: 1em;
+    border: 0;
     color: var(--accent-font-color);
+    font-weight: bold;
+    background: var(--primary-dark-color);
+}
+
+abbr {
+    color: var(--accent-font-color);
+}
+
+#icon #falcon_9 {
+    background-image: url("../images/f9-rocket.png");
+    height: 490px;
+}
+
+#icon #falcon_heavy {
+    background-image: url("../images/fh-rocket.png");
+    height: 490px;
+}
+
+.icon_row {
+    padding: var(--margin-smallscreen) var(--margin-largescreen);
+    width: 5em;
+}
+
+.vSpacer {
+    padding: 1em 0;
+}
+
+.SI {
+    font-weight: bold;
+    margin-left: 1em;
 }
