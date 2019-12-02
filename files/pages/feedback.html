@@ -53,24 +53,54 @@
         </nav>
         <main>
             <aside id="leftMenu">
-                <p>The Navigation Area composed of Thumbnail images will consist of the following;</p>
-                <ol>
-                    <li>The top thumbnail image will link to the home page.</li>
-                    <li>
-                        Subsequent thumbnail images will provide links for pages that are below the home page, i.e.
-                        these
-                        would be the top tier of your navigation bar.
-                    </li>
-                    <li>Each of these thumbnail images will contain a text caption describing the thumbnail.</li>
-                    <li>This thumbnail image navigation area will be the same throughout the site.</li>
-                    <li>
-                        The Thumbnail Navigation Area should be distinguishable from the other areas of your site by
-                        colour
-                        or
-                        border or both.
-                    </li>
-                </ol>
-
+                <div class="ui-border ui-shadow">
+                    <figure>
+                        <a href="../index.html">
+                            <img src="../thumbnails/spacex-logo.png" alt="stilized x from the spacex logo">
+                            <figcaption>Homepage</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="../pages/construction.html">
+                            <img src="../thumbnails/starship.jpg"
+                                alt="an purple-bluewish hue of the new spaceship from spacex, representing future missions"
+                                class="ui-shadow">
+                            <figcaption>Future Missions</figcaption>
+                        </a>
+                    </figure>
+                    <h2 class="ui-shadow ui-border">Current Missions</h2>
+                    <figure>
+                        <a href="../pages/table.html#falcon_heavy">
+                            <img src="../thumbnails/falcon-heavy.jpg"
+                                alt="a close view of the exhaust plume from the three boosters of falcon heavy vehicle"
+                                class="ui-shadow">
+                            <figcaption>Falcon Heavy</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="../pages/table.html#falcon_9">
+                            <img src="../thumbnails/landing.jpg" alt="a blue sky with a falcon 9 rocket landing safely"
+                                class="ui-shadow">
+                            <figcaption>Falcon 9</figcaption>
+                        </a>
+                    </figure>
+                    <h2 class="ui-shadow ui-border">Extras</h2>
+                    <figure>
+                        <a href="../pages/feedback.html">
+                            <img src="../thumbnails/roadster.jpg"
+                                alt="the Earth is seen on the background, while Starman is all cool with that" class="ui-shadow">
+                            <figcaption>Feedback</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="../pages/reference.html">
+                            <img src="../thumbnails/night-launch.jpg"
+                                alt="A night launch of a Falcon 9 rocket leave a light trail from the exhaust plume."
+                                class="ui-shadow">
+                            <figcaption>References</figcaption>
+                        </a>
+                    </figure>
+                </div>
             </aside>
 
             <article>
@@ -131,7 +161,7 @@
                         </section>
                         <section>
                             <p>
-                                <input type="submit" value="Submit" onclick="submitAlert()" class="ui-shadow">
+                                <input type="submit" value="Submit" data-name="feedback_form" onclick="return submitAlert()" class="ui-shadow">
 
                                 <input type="reset" value="Clear" class="ui-shadow">
                             </p>
@@ -179,7 +209,7 @@
                             <br>
                             <section>
                                 <p>
-                                    <input type="submit" value="Submit" onclick="submitAlert()" class="ui-shadow">
+                                    <input type="submit" value="Submit"  data-name="form_page" onclick="submitAlert()" class="ui-shadow">
                             
                                     <input type="reset" value="Clear" class="ui-shadow">
                                 </p>

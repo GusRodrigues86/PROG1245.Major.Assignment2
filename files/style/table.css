@@ -44,6 +44,12 @@ td {
     text-align: right;
 }
 
+tr:first-of-type th {
+    color: var(--accent-font-color);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
 tr:nth-last-of-type(-n+2) th {
     text-align: right;
 }
